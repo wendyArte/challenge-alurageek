@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge AluraGeek</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="AluraGeek Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Sección de Productos -->
+    <section class="productos">
+      <h1>Mis Productos</h1>
+      <div class="productos-lista">
+        <img src="assets/producto1.png" alt="producto1">
+        <img src="assets/trashIcon.png" alt="trashIcon">
+        <!-- Los productos se renderizarán dinámicamente aquí -->
+      </div>
+    </section>
+
+    <!-- Tarjetas de productos adicionales -->
+    <div class="card">
+        <img src="assets/producto2.png" alt="Producto 2">
+        <div class="card-container--info">
+          <p>Smart Watch</p>
+          <div class="card-container--value">
+            <p>$20.00</p>
+            <img src="assets/trashIcon.png" alt="Eliminar">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/producto3.png" alt="Producto 3">
+        <div class="card-container--info">
+          <p>Dumbbell</p>
+          <div class="card-container--value">
+            <p>$35.00</p>
+            <img src="assets/trashIcon.png" alt="Eliminar">
+          </div>
+        </div>
+      </div>
+      <!-- Puedes agregar más productos aquí -->
+    </div>
+  </section>
+
+    <!-- Sección de Formulario -->
+    <section class="formulario">
+      <h1>Agregar Producto</h1>
+      <form id="form-agregar">
+        <input type="text" placeholder="Nombre del producto" id="nombre" required>
+        <input type="number" placeholder="Precio del producto" id="precio" required>
+        <input type="url" placeholder="URL de la imagen" id="imagen" required>
+        <div class="botones">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <img src="assets/logo.png" alt="Logo AluraGeek">
+    <p>Desarrollado por Wendy Arteaga Ordoñez</p>
+    <small>2024 - Challenge AluraGeek</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
